@@ -1,0 +1,427 @@
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  background-color:#070519;
+  color:white;
+}
+
+.contenedor{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background-color:#0d0b24;
+  flex-wrap:wrap;
+  gap:1rem;
+  padding:1.2rem;
+  border-bottom:1px solid #25195e;
+}
+
+.logo{
+  margin:0;
+  font-size:2rem;
+}
+
+.logo span{
+  color:#865cff;
+}
+
+.navegacion{
+  display:flex;
+  gap:1.8rem;
+}
+
+.navegacion a{
+  text-decoration:none;
+  color:#ddd;
+  padding-bottom:0.3rem;
+  transition:0.3s;
+}
+
+.navegacion a:hover{
+  color:white;
+  border-bottom:0.15rem solid #7446ff;
+}
+
+#btn{
+  background:linear-gradient(135deg,#4513a3,#7137e8);
+  border:none;
+  border-radius:10px;
+  padding:0.8rem 1.3rem;
+  color:white;
+  cursor:pointer;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(106,62,255,0.4);
+}
+
+.presentacion{
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5,3,25,0.95),
+      rgba(19,5,64,0.65),
+      rgba(0,0,0,0.25)
+    ),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIloCe34dQbAnFwVLu2JGXPakAYaCjBGOGIrWAHgyHJw&s=10");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:560px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:5rem;
+}
+
+.texto-presentacion{
+  max-width:650px;
+}
+
+.mini-titulo{
+  color:#a886ff;
+  font-size:0.8rem;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.presentacion h1,
+.presentacion h2{
+  margin:0;
+}
+
+.texto-presentacion h1{
+  font-size:3.3rem;
+  margin-top:1rem;
+}
+
+.texto-presentacion h2{
+  font-size:3.3rem;
+  color:#865cff;
+  margin-bottom:1.5rem;
+}
+
+.texto-presentacion p{
+  color:#d7d7e2;
+  font-size:1.1rem;
+  line-height:1.7;
+  max-width:550px;
+}
+
+.botones{
+  display:flex;
+  gap:1rem;
+  margin-top:2rem;
+}
+
+#boton-conocer,
+#boton-explorar{
+  padding:0.8rem 1.5rem;
+  border-radius:7px;
+  cursor:pointer;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#boton-conocer{
+  background-color:transparent;
+  color:white;
+  border:1px solid #77758a;
+}
+
+#boton-conocer:hover{
+  transform:translateY(-4px);
+  background-color:rgba(255,255,255,0.08);
+}
+
+#boton-explorar{
+  background:linear-gradient(135deg,#4d1db0,#7948f7);
+  border:none;
+  color:white;
+  box-shadow:0 8px 18px rgba(90,45,200,0.3);
+}
+
+#boton-explorar:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(111,67,230,0.5);
+}
+
+.contenido{
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  padding:4rem 5%;
+  background-color:#080b17;
+}
+
+.titulado{
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+}
+
+.titulado span{
+  color:#865cff;
+  font-size:0.8rem;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.titulado h1{
+  margin-bottom:0.3rem;
+  font-size:2.2rem;
+}
+
+.titulado p{
+  color:#989fb4;
+}
+
+.caja-principal{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:0.8rem;
+  background:linear-gradient(145deg,#101729,#0b1020);
+  border:1px solid #283350;
+  border-radius:14px;
+  padding:1.6rem;
+  transition:transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.caja1:hover,
+.caja2:hover,
+.caja3:hover,
+.caja4:hover,
+.caja5:hover,
+.caja6:hover{
+  transform:translateY(-8px);
+  border-color:#7349dd;
+  box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+.caja-principal h3{
+  margin:0;
+  font-size:1.4rem;
+}
+
+.caja-principal p{
+  color:#aab2c5;
+  line-height:1.5;
+  flex:1;
+}
+
+.caja-principal small{
+  background-color:#13382f;
+  color:#54e0ae;
+  padding:0.4rem 0.7rem;
+  border-radius:15px;
+}
+
+.icono{
+  width:55px;
+  height:55px;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  box-shadow:0 8px 15px rgba(0,0,0,0.3);
+}
+
+.html{
+  background-color:#e34c26;
+}
+
+.css{
+  background-color:#264de4;
+}
+
+.javascript{
+  background-color:#f7df1e;
+  color:#111;
+}
+
+.python{
+  background-color:#3776ab;
+}
+
+.sql{
+  background-color:#7047db;
+}
+
+.git{
+  background-color:#f1502f;
+}
+
+.btn-card{
+  width:100%;
+  padding:0.7rem;
+  background-color:transparent;
+  color:white;
+  border:1px solid #48536d;
+  border-radius:7px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-card:hover{
+  background-color:#5524b8;
+  border-color:#7446ff;
+}
+
+.sobre-mi{
+  padding:5rem 2rem;
+  text-align:center;
+  background:linear-gradient(135deg,#10052b,#180b3d);
+}
+
+.sobre-mi span{
+  color:#8e67ff;
+  font-size:0.8rem;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.sobre-mi h2{
+  font-size:2.2rem;
+}
+
+.sobre-mi p{
+  max-width:700px;
+  margin:auto;
+  color:#b8bdd0;
+  line-height:1.7;
+}
+
+footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:2rem;
+  padding:2.5rem 5%;
+  background-color:#050711;
+  border-top:1px solid #252b40;
+}
+
+footer h2{
+  margin:0;
+}
+
+footer span{
+  color:#8057ff;
+}
+
+footer p{
+  color:#8f97aa;
+}
+
+.footer-nav{
+  display:flex;
+  gap:1.5rem;
+}
+
+.footer-nav a{
+  text-decoration:none;
+  color:#b8bfd0;
+}
+
+.footer-nav a:hover{
+  color:#8d65ff;
+}
+
+.derechos{
+  text-align:right;
+}
+
+@media(max-width:900px){
+
+  .caja-principal{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .presentacion{
+    padding:3rem;
+  }
+
+  .texto-presentacion h1,
+  .texto-presentacion h2{
+    font-size:2.6rem;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .contenedor{
+    flex-direction:column;
+  }
+
+  .navegacion{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
+  }
+
+  .presentacion{
+    min-height:520px;
+    padding:2rem;
+  }
+
+  .texto-presentacion h1,
+  .texto-presentacion h2{
+    font-size:2.2rem;
+  }
+
+  .botones{
+    flex-direction:column;
+  }
+
+  #boton-conocer,
+  #boton-explorar{
+    width:100%;
+  }
+
+  .contenido{
+    padding:3rem 1.3rem;
+  }
+
+  .caja-principal{
+    grid-template-columns:1fr;
+  }
+
+  footer{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .derechos{
+    text-align:left;
+  }
+
+}
