@@ -2,7 +2,7 @@ wdocument.addEventListener("DOMContentLoaded", () => {
     const cajitasPro = document.querySelectorAll('[class^="cajita-GENERAL-"]');
     let vocesDisponibles = [];
 
-    // Cargar voces anticipadamente para evitar retrasos en celulares
+    
     function cargarVoces() {
         if ('speechSynthesis' in window) {
             vocesDisponibles = window.speechSynthesis.getVoices();
@@ -23,7 +23,7 @@ wdocument.addEventListener("DOMContentLoaded", () => {
         }
         const voces = vocesDisponibles;
         
-        // Buscar voces naturales o comerciales en español compatibles con móviles
+        
         let v = voces.find(item => item.lang && item.lang.toLowerCase().startsWith('es') && (
             item.name.includes('Natural') || 
             item.name.includes('Lucia') || 
@@ -52,7 +52,7 @@ wdocument.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Cancelar cualquier audio previo de inmediato
+            
             window.speechSynthesis.cancel();
 
             cajitasPro.forEach(c => {
@@ -167,7 +167,7 @@ wdocument.addEventListener("DOMContentLoaded", () => {
             utter.onend = apagarTodo;
             utter.onerror = apagarTodo;
 
-            // Ejecución síncrona inmediata sin setTimeout para que el móvil no bloquee el audio
+            
             window.speechSynthesis.speak(utter);
         });
     });
