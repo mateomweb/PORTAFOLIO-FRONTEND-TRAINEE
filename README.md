@@ -31,3 +31,7 @@ npm run dev
 - **React:** componentes, props, `useState`, renderizado condicional y listas con `map`
 - **TypeScript:** tipos, interfaces y tipado de props
 - **Git y GitHub:** control de versiones
+
+## 📫 Contacto
+
+- GitHub: [mateomweb](https://github.com/mateomweb)
