@@ -1,6 +1,6 @@
-# Portafolio Frontend Junior 💻
+# Portafolio Frontend Trainee 💻
 
-Hola, soy **Mateo** 👋. Este repositorio reúne los proyectos que he hecho mientras aprendo desarrollo frontend: desde páginas con HTML y CSS hasta aplicaciones con React y TypeScript.
+Hola, soy **Mateo** 👋, estudiante y trainee de desarrollo frontend. En este repositorio reúno los proyectos de práctica que voy haciendo mientras aprendo: páginas con HTML, CSS y JavaScript, y mis primeros pasos con React y TypeScript.
 
 ## 🗂️ Proyectos
 
