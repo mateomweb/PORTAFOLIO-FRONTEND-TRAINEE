@@ -1,0 +1,114 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#070519;
+  color:white;
+}
+
+.contenedor{
+  width:90%;
+  max-width:500px;
+  background-color:#0d0b24;
+  border:1px solid #25195e;
+  border-radius:15px;
+  padding:2rem;
+}
+
+h1{
+  margin-top:0;
+  text-align:center;
+}
+
+h1 span{
+  color:#865cff;
+}
+
+form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0.5rem;
+}
+
+input,
+select{
+  padding:0.8rem;
+  border:1px solid #25195e;
+  border-radius:10px;
+  background-color:#070519;
+  color:white;
+}
+
+input[type="text"]{
+  grid-column:span 2;
+}
+
+button{
+  background:linear-gradient(135deg,#4513a3,#7137e8);
+  border:none;
+  border-radius:10px;
+  padding:0.8rem;
+  color:white;
+  cursor:pointer;
+}
+
+form button{
+  grid-column:span 2;
+}
+
+.error{
+  color:#ff6b6b;
+  font-size:0.9rem;
+}
+
+.vacio{
+  text-align:center;
+  color:#777;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+.gasto{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0.8rem;
+  margin-bottom:0.5rem;
+  background-color:#151233;
+  border-radius:10px;
+}
+
+.gasto p{
+  margin:0;
+}
+
+.gasto small{
+  color:#865cff;
+}
+
+.gasto-derecha{
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+}
+
+.gasto-derecha button{
+  background:#ff4d4d;
+  padding:0.3rem 0.6rem;
+}
+
+.total{
+  text-align:right;
+  border-top:1px solid #25195e;
+  padding-top:1rem;
+}
